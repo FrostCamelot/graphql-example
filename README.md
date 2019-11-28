@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+- npm install -g @vue/cli@latest
+- vue create graphql-example
+- cd graphql-example
+- mkdir server
+- npm install express express-graphql graphql --save
+
