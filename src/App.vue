@@ -49,8 +49,9 @@
       Name: <input v-model="name">
       Attack Damage: <input v-model.number="attack">
       <div>
-        Data:
-        {{ updatedChampion }}
+        <div v-if="updatedChampion">
+          <span>{{updatedChampion.name}}</span> - <span>{{updatedChampion.attackDamage}}</span>
+        </div>
       </div>
       <button @click="updateAttackDamage">Update Champion</button>
     </div>
@@ -70,7 +71,7 @@ export default {
       champion: '',
       name: '',
       attack: null,
-      updatedChampion: {}
+      updatedChampion: null
     }
   },
   methods: {

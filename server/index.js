@@ -1,5 +1,5 @@
 const express = require('express')
-const { graphql, buildSchema } = require('graphql')
+const { buildSchema } = require('graphql')
 const graphqlHTTP = require('express-graphql')
 const cors = require('cors')
 const Champion = require('./champion')
